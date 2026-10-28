@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Cartamine</title>
+  <meta name="description" content="Cartamine privacy policy: what we collect, what we never collect, and your KVKK and GDPR rights.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">Cartamine<span class="dot">.</span></a>
+      <div class="lang-toggle" role="group" aria-label="Language / Dil">
+        <button type="button" class="lang-btn" data-set="en">EN</button>
+        <button type="button" class="lang-btn" data-set="tr">TR</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ ENGLISH ============ -->
+      <div lang="en">
+        <div class="page-head">
+          <h1>Privacy Policy</h1>
+          <p class="meta">Last updated: 26 October 2026 · Applies to the Cartamine app (com.cartamine.app) and this website.</p>
+        </div>
+
+        <article class="prose">
+          <div class="callout">
+            <p>The short version: Cartamine is a simulation, so we simply don't need much
+              data. No payment details, no real addresses, no ad targeting, no selling anything
+              to anyone. What little we keep sits under an anonymous account, and you can export
+              or delete it whenever you like.</p>
+          </div>
+
+          <h2>1. Who we are</h2>
+          <p>Cartamine is operated by an independent developer based in Türkiye ("we",
+            "us"), who is the controller of the data described here. For anything
+            privacy-related, write to <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a>.</p>
+
+          <h2>2. What we collect</h2>
+          <ul>
+            <li><b>An anonymous account ID.</b> A random identifier created on your device. No
+              name, email, or phone number is required to use the app. If you choose to sign in
+              with Apple, we receive only Apple's private identifier for you; we do not ask
+              for your name or your email address.</li>
+            <li><b>Your simulated activity.</b> Your profile setup, preferences, simulated orders,
+              your money-kept history, and the names you give wishlist items and savings jars
+              (text you type yourself) — synced under that account so you can keep them across
+              devices. Please don't type anything into those names that you would not want
+              stored.</li>
+            <li><b>Mood check responses.</b> If you choose to answer the optional mood check-ins,
+              we store your responses so the app can show you your own patterns. If a Premium
+              subscription ends, the app may ask why; the one reason you pick from a fixed list
+              is stored under your account too.</li>
+            <li><b>Analytics events</b> (via PostHog), <i>only if you turn them on</i> — they are off by
+              default (Settings → Privacy). Pseudonymous usage events — for example, that a
+              simulated checkout was completed — so we can understand what's useful and improve
+              the app.</li>
+            <li><b>Crash reports</b> (via Sentry). Technical diagnostics when something breaks (the error,
+              your device model and OS version, and a random identifier for this installation —
+              never your account ID), so we can fix it, plus timing traces from a sample of
+              sessions so we can see what is slow.</li>
+            <li><b>Subscription status</b> (via RevenueCat). Whether Premium (a subscription, a trial, or
+              Lifetime) is active. Payment itself is handled entirely by Apple — we never see
+              your card or billing details. RevenueCat also receives your device's vendor
+              identifier (an app-specific ID Apple provides — not the advertising identifier)
+              and Apple's anonymous Search Ads attribution token, which the app passes on
+              without asking anything of you, so we can tell whether a campaign worked.
+              Neither is used to track you across other companies' apps or websites.</li>
+            <li><b>A marker for the free first order.</b> The app remembers on this device — in
+              the iOS Keychain, which can outlast a reinstall — that your free first simulated
+              order has been used, so it is not offered twice. It holds no personal
+              information, and is not removed when you delete your account.</li>
+            <li><b>Updates and pictures.</b> The app asks Expo's update service whether a newer
+              version of its own code exists, and loads catalog pictures from the Pexels image
+              network. Like any website, those servers see your IP address; we receive nothing
+              further from them.</li>
+          </ul>
+
+          <h2>3. What we never collect</h2>
+          <ul>
+            <li><b>No payment data.</b> There are no real payment fields anywhere in the app.
+              The checkout "payment" screen is part of the simulation and captures nothing.</li>
+            <li><b>No real addresses.</b> Delivery areas in the app are labels, never real
+              addresses. Anything you type for realism is treated as throwaway, not as personal
+              data to keep.</li>
+            <li><b>No location sent anywhere.</b> You can ask the courier map to draw its
+              make-believe route in a town near you. If you do, iOS gives us an approximate
+              position, we round it to about 20 kilometres and keep only the centre of a town
+              in that area &mdash; never a neighbourhood, never an address &mdash; on your device
+              only. The list of towns ships inside the app: town centres from
+              <a href="https://www.geonames.org">GeoNames</a> (CC BY 4.0), moved off the sea with
+              <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> data
+              (&copy; OpenStreetMap contributors). The list itself is published at
+              <a href="https://canknbr.github.io/cartamine/data/towns.json">https://canknbr.github.io/cartamine/data/towns.json</a> under the
+              <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License (ODbL)</a>. It is never uploaded, never
+              attached to an order, and never included in analytics. The map itself draws Apple Maps tiles for the
+              area on screen, as any map does. Turning it off is one tap in
+              Settings &rarr; Appearance, and deleting your data removes it. The permission is
+              optional; everything works without it.</li>
+            <li><b>No ad targeting.</b> Your in-app activity is never used to target advertising or
+              shared with advertisers, and there is no ad SDK in the app.</li>
+            <li><b>No selling of data.</b> We do not sell or rent your data to anyone, ever.</li>
+          </ul>
+
+          <h2>4. How we use the data</h2>
+          <p>Only to run the app: keep your history in sync, show your money-kept total and mood
+            patterns back to you, keep the app stable, and understand — in aggregate — which
+            features help. We keep data only as long as it's needed for these purposes; deleting
+            your account removes your synced data.</p>
+          <p><b>How long we keep it.</b> Your synced data and simulated-order records stay for as long
+            as your account exists and go when you delete it. Sentry deletes crash reports and
+            timing traces after 30 days. Analytics events, if you turned them on, are kept by
+            PostHog for up to one year, and are deleted sooner when you delete your account. The
+            subscription record at RevenueCat is kept until you delete your account; deleting it
+            does not affect restoring a purchase, which belongs to your Apple ID.</p>
+
+          <h2>5. Service providers</h2>
+          <p>We use a small set of processors, each receiving only what's listed above:
+            PostHog (analytics, only if you opt in), Sentry (crash reporting), RevenueCat
+            (subscription status and Apple Search Ads attribution), Expo (app updates), Pexels
+            (catalog pictures) and Google Firebase (your synced data and the simulated-order
+            records, stored in the EU, and the anonymous or Apple-linked sign-in, which Google runs
+            from data centres in the United States). Apple processes App Store payments
+            independently under its own terms. Firebase sign-in, RevenueCat and PostHog process data
+            in the United States, and Sentry in the United States or the EU; where data leaves
+            Türkiye or the EU we rely on the providers' standard contractual safeguards.</p>
+
+          <h2>6. Your rights (KVKK &amp; GDPR)</h2>
+          <p>Under Türkiye's Personal Data Protection Law (KVKK, Law No. 6698) and, where it
+            applies, the EU GDPR, you have the right to:</p>
+          <ul>
+            <li>learn whether we process data about you, and access a copy of it;</li>
+            <li>have inaccurate data corrected;</li>
+            <li>have your data deleted;</li>
+            <li>receive your data in a portable format (export);</li>
+            <li>object to processing and withdraw consent at any time (analytics consent is
+              separate and optional in the app);</li>
+            <li>complain to the Turkish Data Protection Authority (KVKK Kurumu) or your local
+              supervisory authority.</li>
+          </ul>
+
+          <h2>7. Export &amp; deletion</h2>
+          <p>Two ways, both free:</p>
+          <ul>
+            <li><b>In the app:</b> Settings → Privacy lets you start an export or delete your
+              account. Deletion wipes your synced data.</li>
+            <li><b>By email:</b> write to <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a>
+              from the device or with your anonymous account ID (shown in Settings → Privacy),
+              and tell us whether you'd like an export or a deletion. We respond within 30 days.</li>
+          </ul>
+          <p>Deleting your account removes everything stored under it at Firebase at once, deletes
+            your customer record at RevenueCat and, if you had turned analytics on, your person and
+            events at PostHog, and signs the device out. Deleting the account does not cancel an App
+            Store subscription, and a Lifetime purchase or an active subscription can still be
+            restored: it belongs to your Apple ID. What remains afterwards: Sentry keeps crash
+            reports until they expire after 30 days (they carry no account ID); PostHog removes
+            deleted events in its weekly clean-up; and Google clears its own internal and backup
+            copies of deleted Firebase data within about six months. If one of these services
+            cannot be reached at the moment you delete, we finish the deletion there by hand.</p>
+
+          <h2>8. Children</h2>
+          <p>Cartamine is not directed at children under 13, and we do not knowingly collect
+            data from them.</p>
+
+          <h2>9. Changes</h2>
+          <p>If this policy changes in a way that matters, we'll say so plainly in the app and
+            update the date at the top of this page.</p>
+
+          <h2>10. Contact</h2>
+          <p>Privacy questions and requests: <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a></p>
+        </article>
+      </div>
+
+      <!-- ============ TÜRKÇE ============ -->
+      <div lang="tr">
+        <div class="page-head">
+          <h1>Gizlilik Politikası</h1>
+          <p class="meta">Son güncelleme: 26 Ekim 2026 · Cartamine uygulaması (com.cartamine.app) ve bu web sitesi için geçerlidir.</p>
+        </div>
+
+        <article class="prose">
+          <div class="callout">
+            <p>Kısaca: Cartamine bir simülasyon olduğu için pek fazla veriye ihtiyacımız
+              yok. Ödeme bilgisi yok, gerçek adres yok, reklam hedeflemesi yok, kimseye veri
+              satışı yok. Tuttuğumuz az miktardaki veri anonim bir hesabın altında durur;
+              dilediğin an dışa aktarabilir veya silebilirsin.</p>
+          </div>
+
+          <h2>1. Biz kimiz</h2>
+          <p>Cartamine, Türkiye'de yerleşik bağımsız bir geliştirici ("biz") tarafından işletilir;
+            burada anlatılan verilerin sorumlusu odur. Gizlilikle ilgili her konu için
+            <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a> adresine yazabilirsin.</p>
+
+          <h2>2. Neler topluyoruz</h2>
+          <ul>
+            <li><b>Anonim bir hesap kimliği.</b> Cihazında oluşturulan rastgele bir tanımlayıcı.
+              Uygulamayı kullanmak için isim, e-posta veya telefon numarası gerekmez. Apple ile
+              girişi seçersen yalnızca Apple'ın sana ait özel tanımlayıcısını alırız; adını ya
+              da e-posta adresini istemeyiz.</li>
+            <li><b>Simüle etkinliğin.</b> Profilin, kurulumun, tercihlerin, simüle siparişlerin,
+              cebinde-kalan geçmişin ve istek listesi ögelerine ya da birikim kumbaralarına
+              verdiğin adlar (kendi yazdığın metin) — cihazlar arasında koruyabilmen için bu
+              hesap altında eşitlenir. Bu adlara saklanmasını istemeyeceğin bir şey yazma.</li>
+            <li><b>Ruh hali yanıtların.</b> İsteğe bağlı ruh hali sorularını yanıtlamayı
+              seçersen, kendi örüntülerini görebilmen için yanıtlarını saklarız. Premium aboneliğin
+              sona ererse uygulama nedenini sorabilir; sabit bir listeden seçtiğin tek neden de
+              hesabın altında saklanır.</li>
+            <li><b>Analitik olayları</b> (PostHog aracılığıyla), <i>yalnızca sen açarsan</i> — varsayılan
+              olarak kapalıdır (Ayarlar → Gizlilik). Takma adlı kullanım olayları — örneğin bir
+              simüle siparişin tamamlandığı — neyin işe yaradığını anlayıp uygulamayı
+              geliştirmemiz için.</li>
+            <li><b>Çökme raporları</b> (Sentry aracılığıyla). Bir şey bozulduğunda düzeltmemizi
+              sağlayan teknik tanılamalar (hata, cihaz modelin ve işletim sistemi sürümün, bu
+              kuruluma ait rastgele bir tanımlayıcı — hesap kimliğin asla değil); ayrıca neyin yavaş
+              olduğunu görmek için oturumların bir örnekleminden zamanlama izleri.</li>
+            <li><b>Abonelik durumu</b> (RevenueCat aracılığıyla). Premium'un (abonelik, deneme ya da
+              Ömür Boyu) etkin olup olmadığı. Ödemenin kendisi tamamen Apple tarafından yürütülür —
+              kart veya fatura bilgilerini asla görmeyiz. RevenueCat ayrıca cihazının satıcı
+              tanımlayıcısını (Apple'ın uygulamaya özel verdiği kimlik — reklam kimliği değil) ve
+              Apple'ın anonim Search Ads atıf belirtecini alır; uygulama bunları senden bir şey
+              istemeden iletir, böylece bir kampanyanın işe yarayıp yaramadığını anlayabiliriz.
+              Hiçbiri seni başka şirketlerin uygulamalarında veya sitelerinde izlemek için
+              kullanılmaz.</li>
+            <li><b>Ücretsiz ilk sipariş işareti.</b> Uygulama, ücretsiz ilk simüle siparişinin
+              kullanıldığını bu cihazda — yeniden kurulumdan sonra bile kalabilen iOS
+              Anahtar Zinciri'nde — hatırlar; böylece ikinci kez sunulmaz. Kişisel bilgi içermez
+              ve hesabını sildiğinde kaldırılmaz.</li>
+            <li><b>Güncellemeler ve görseller.</b> Uygulama, kendi kodunun daha yeni bir sürümü
+              olup olmadığını Expo'nun güncelleme hizmetine sorar ve katalog görsellerini Pexels
+              görsel ağından yükler. Her web sitesi gibi bu sunucular IP adresini görür; onlardan
+              başka bir şey almayız.</li>
+          </ul>
+
+          <h2>3. Neleri asla toplamayız</h2>
+          <ul>
+            <li><b>Ödeme verisi yok.</b> Uygulamanın hiçbir yerinde gerçek bir ödeme alanı
+              bulunmaz. Ödeme adımındaki ekran simülasyonun parçasıdır ve hiçbir şey kaydetmez.</li>
+            <li><b>Gerçek adres yok.</b> Uygulamadaki teslimat bölgeleri etikettir, asla gerçek
+              adres değildir. Gerçekçilik için yazdığın her şey saklanacak kişisel veri olarak
+              değil, geçici olarak değerlendirilir.</li>
+            <li><b>Konum hiçbir yere gitmez.</b> Kurye haritasının hayali rotayı sana yakın bir
+              şehirde çizmesini isteyebilirsin. İstersen iOS bize yaklaşık bir konum verir, biz onu
+              yaklaşık 20 kilometreye yuvarlar ve yalnızca o bölgedeki bir şehrin merkezini saklarız
+              &mdash; asla bir semt, asla bir adres &mdash; ve bu yalnızca cihazında kalır. Şehir
+              listesi uygulamanın içindedir: şehir merkezleri <a href="https://www.geonames.org">GeoNames</a>
+              (CC BY 4.0) verisinden gelir ve <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
+              verisiyle (&copy; OpenStreetMap katkıcıları) denizden içeri kaydırılır. Listenin kendisi
+              <a href="https://canknbr.github.io/cartamine/data/towns.json">https://canknbr.github.io/cartamine/data/towns.json</a> adresinde
+              <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License (ODbL)</a>
+              ile yayımlanır. Hiçbir zaman yüklenmez, bir siparişe iliştirilmez
+              ve analitiğe girmez. Kapatmak Ayarlar &rarr; G&ouml;r&uuml;n&uuml;m'de tek dokunuş;
+              verini silmek de onu siler. Harita, her harita gibi ekrandaki alan için Apple Haritalar
+              karolarını çizer. İzin isteğe bağlıdır, her şey onsuz da çalışır.</li>
+            <li><b>Reklam hedeflemesi yok.</b> Uygulama içi etkinliğin asla reklam hedeflemek için
+              kullanılmaz, reklamverenlerle paylaşılmaz; uygulamada reklam SDK'sı da yoktur.</li>
+            <li><b>Veri satışı yok.</b> Verini hiç kimseye satmayız, kiralamayız.</li>
+          </ul>
+
+          <h2>4. Veriyi nasıl kullanıyoruz</h2>
+          <p>Yalnızca uygulamayı çalıştırmak için: geçmişini eşit tutmak, cebinde-kalan toplamını
+            ve ruh hali örüntülerini sana geri göstermek, uygulamayı kararlı tutmak ve hangi
+            özelliklerin işe yaradığını toplu halde anlamak. Veriyi yalnızca bu amaçlar için
+            gerektiği kadar tutarız; hesabını sildiğinde eşitlenmiş verin de silinir.</p>
+          <p><b>Ne kadar süre tutarız.</b> Eşitlenen verin ve simüle sipariş kayıtların hesabın var
+            olduğu sürece durur; hesabını sildiğinde gider. Sentry, çökme raporlarını ve zamanlama
+            izlerini 30 gün sonra siler. Analitik olayları, açtıysan, PostHog'da en fazla bir yıl
+            tutulur; hesabını silersen daha önce silinir. RevenueCat'teki abonelik kaydı hesabını
+            silene kadar tutulur; silinmesi satın almanı geri yüklemeyi etkilemez, çünkü satın alma
+            Apple Kimliğine aittir.</p>
+
+          <h2>5. Hizmet sağlayıcılar</h2>
+          <p>Her biri yalnızca yukarıda listelenenleri alan küçük bir işleyici grubuyla
+            çalışırız: PostHog (analitik, yalnızca açarsan), Sentry (çökme raporları), RevenueCat
+            (abonelik durumu ve Apple Search Ads atfı), Expo (uygulama güncellemeleri), Pexels
+            (katalog görselleri) ve Google Firebase (AB'de saklanan eşitlenmiş verilerin ve simüle
+            sipariş kayıtların; Google'ın ABD'deki veri merkezlerinden yürüttüğü anonim ya da
+            Apple'a bağlı oturum açma). App Store ödemelerini Apple, kendi koşulları altında bağımsız
+            olarak işler. Firebase oturum açma, RevenueCat ve PostHog veriyi ABD'de, Sentry ise ABD'de
+            ya da AB'de işler; veri Türkiye veya AB dışına çıktığında sağlayıcıların standart
+            sözleşmesel güvencelerine dayanırız.</p>
+
+          <h2>6. Hakların (KVKK ve GDPR)</h2>
+          <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve geçerli olduğu durumlarda
+            AB GDPR kapsamında şu haklara sahipsin:</p>
+          <ul>
+            <li>hakkında veri işlenip işlenmediğini öğrenmek ve bir kopyasına erişmek;</li>
+            <li>yanlış verilerin düzeltilmesini istemek;</li>
+            <li>verilerinin silinmesini istemek;</li>
+            <li>verini taşınabilir bir biçimde almak (dışa aktarma);</li>
+            <li>işlemeye itiraz etmek ve rızanı dilediğin an geri çekmek (analitik rızası
+              uygulamada ayrı ve isteğe bağlıdır);</li>
+            <li>Kişisel Verileri Koruma Kurumu'na veya yerel denetim makamına başvurmak.</li>
+          </ul>
+
+          <h2>7. Dışa aktarma ve silme</h2>
+          <p>İki yol var, ikisi de ücretsiz:</p>
+          <ul>
+            <li><b>Uygulamada:</b> Ayarlar → Gizlilik'ten dışa aktarma başlatabilir veya hesabını
+              silebilirsin. Silme, eşitlenmiş verini tamamen kaldırır.</li>
+            <li><b>E-postayla:</b> <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a>
+              adresine, cihazından veya anonim hesap kimliğinle (Ayarlar → Gizlilik'te görünür)
+              yazıp dışa aktarma mı silme mi istediğini belirt. 30 gün içinde yanıt veririz.</li>
+          </ul>
+          <p>Hesabını silmek, Firebase'de hesabının altında duran her şeyi hemen kaldırır,
+            RevenueCat'teki müşteri kaydını ve analitiği açmışsan PostHog'daki kişi kaydınla
+            olaylarını siler, cihazın oturumunu kapatır. Hesabı silmek App Store aboneliğini iptal
+            etmez; Ömür Boyu satın alma ya da süren bir abonelik yine geri yüklenebilir, çünkü Apple
+            Kimliğine aittir. Sonrasında kalanlar: Sentry, çökme raporlarını 30 gün dolana kadar
+            tutar (hesap kimliği taşımazlar); PostHog, silinen olayları haftalık temizliğinde
+            kaldırır; Google, silinen Firebase verisinin kendi iç ve yedek kopyalarını yaklaşık altı
+            ay içinde temizler. Silme anında bu hizmetlerden birine ulaşılamazsa, silmeyi orada elle
+            tamamlarız.</p>
+
+          <h2>8. Çocuklar</h2>
+          <p>Cartamine 13 yaş altı çocuklara yönelik değildir; onlardan bilerek veri
+            toplamayız.</p>
+
+          <h2>9. Değişiklikler</h2>
+          <p>Bu politika önemli bir biçimde değişirse bunu uygulamada açıkça söyler ve bu
+            sayfanın üstündeki tarihi güncelleriz.</p>
+
+          <h2>10. İletişim</h2>
+          <p>Gizlilik soruları ve talepleri: <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a></p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="privacy.html"><span lang="en">Privacy</span><span lang="tr">Gizlilik</span></a>
+        <a href="terms.html"><span lang="en">Terms</span><span lang="tr">Koşullar</span></a>
+        <a href="support.html"><span lang="en">Support</span><span lang="tr">Destek</span></a>
+      </nav>
+      <p>© 2026 Cartamine · <a href="mailto:cankanbur1@gmail.com">cankanbur1@gmail.com</a></p>
+      <p class="disclaimer">
+        <span lang="en">Cartamine is a simulation. Nothing is sold, shipped, or charged.</span>
+        <span lang="tr">Cartamine bir simülasyondur. Hiçbir şey satılmaz, kargolanmaz veya
+          ücretlendirilmez.</span>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var btns = document.querySelectorAll('.lang-btn');
+      function setLang(l) {
+        document.documentElement.setAttribute('data-lang', l);
+        document.documentElement.lang = l;
+        try { localStorage.setItem('dc-lang', l); } catch (e) {}
+        btns.forEach(function (b) {
+          b.classList.toggle('is-active', b.getAttribute('data-set') === l);
+        });
+      }
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () { setLang(b.getAttribute('data-set')); });
+      });
+      var saved = 'en';
+      try { saved = localStorage.getItem('dc-lang') || 'en'; } catch (e) {}
+      setLang(saved);
+    })();
+  </script>
+</body>
+</html>

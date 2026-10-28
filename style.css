@@ -1,0 +1,439 @@
+/* Cartamine — landing & legal pages
+   Plain CSS, no build step. Mobile-first. */
+
+:root {
+  --cream: #FAF7F2;
+  --ink: #1F1A15;
+  --coral: #E85D4A;
+  --coral-soft: #FBEAE6;
+  --mint: #2FA57B;
+  --mint-soft: #E4F3ED;
+  --surface: #FFFFFF;
+  --border: #E9E1D6;
+  --text-2: #6B6156;
+  --text-3: #9A8F82;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --font-head: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Language switching: the html[data-lang] attribute decides
+   which language blocks are visible. */
+html[data-lang="en"] [lang="tr"] { display: none; }
+html[data-lang="tr"] [lang="en"] { display: none; }
+
+h1, h2, h3 {
+  font-family: var(--font-head);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--coral);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.brand {
+  color: var(--ink);
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.brand .dot {
+  color: var(--coral);
+}
+
+.lang-toggle {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  display: inline-flex;
+  padding: 3px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  color: var(--text-2);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 12px;
+}
+
+.lang-btn.is-active {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  padding: 40px 0 56px;
+  text-align: center;
+}
+
+.pill {
+  background: var(--mint-soft);
+  border-radius: 999px;
+  color: var(--mint);
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 7vw, 3.6rem);
+  margin: 18px 0 10px;
+}
+
+.tagline {
+  color: var(--coral);
+  font-family: var(--font-head);
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.hero .sub {
+  color: var(--text-2);
+  margin: 16px auto 0;
+  max-width: 560px;
+}
+
+.store-badge {
+  align-items: center;
+  background: var(--ink);
+  border-radius: 12px;
+  color: var(--cream);
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 1.25;
+  margin-top: 28px;
+  padding: 10px 26px;
+}
+
+.store-badge:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.store-badge .small {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.store-badge .big {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.badge-note {
+  color: var(--text-3);
+  font-size: 0.78rem;
+  margin-top: 10px;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.features {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.card .emoji {
+  font-size: 1.6rem;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  margin: 10px 0 6px;
+}
+
+.card p {
+  color: var(--text-2);
+  font-size: 0.95rem;
+}
+
+.card.mint {
+  background: var(--mint-soft);
+  border-color: transparent;
+}
+
+.card.mint h3 {
+  color: var(--mint);
+}
+
+/* ---------- How it works ---------- */
+
+.steps {
+  counter-reset: step;
+  display: grid;
+  gap: 14px;
+  list-style: none;
+}
+
+.steps li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  counter-increment: step;
+  padding: 16px 18px 16px 58px;
+  position: relative;
+}
+
+.steps li::before {
+  align-items: center;
+  background: var(--coral-soft);
+  border-radius: 999px;
+  color: var(--coral);
+  content: counter(step);
+  display: flex;
+  font-family: var(--font-head);
+  font-weight: 700;
+  height: 28px;
+  justify-content: center;
+  left: 16px;
+  position: absolute;
+  top: 16px;
+  width: 28px;
+}
+
+.steps b {
+  display: block;
+}
+
+.steps p {
+  color: var(--text-2);
+  font-size: 0.92rem;
+}
+
+.honesty {
+  background: var(--ink);
+  border-radius: var(--radius);
+  color: var(--cream);
+  margin-top: 24px;
+  padding: 26px 24px;
+  text-align: center;
+}
+
+.honesty p {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* ---------- Premium blurb ---------- */
+
+.premium {
+  border-top: 1px solid var(--border);
+}
+
+.premium .card {
+  text-align: center;
+}
+
+.premium .fine {
+  color: var(--text-3);
+  font-size: 0.82rem;
+  margin-top: 12px;
+}
+
+/* ---------- Legal / prose pages ---------- */
+
+.page-head {
+  padding: 32px 0 8px;
+}
+
+.page-head h1 {
+  font-size: clamp(1.9rem, 6vw, 2.6rem);
+}
+
+.page-head .meta {
+  color: var(--text-3);
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.prose {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 16px 0 48px;
+}
+
+.prose h2 {
+  font-size: 1.35rem;
+  margin: 32px 0 10px;
+}
+
+.prose h3 {
+  font-size: 1.05rem;
+  margin: 22px 0 6px;
+}
+
+.prose p {
+  color: var(--text-2);
+  margin: 10px 0;
+}
+
+.prose ul {
+  color: var(--text-2);
+  margin: 10px 0;
+  padding-left: 22px;
+}
+
+.prose li {
+  margin: 6px 0;
+}
+
+.prose .callout {
+  background: var(--mint-soft);
+  border-left: 4px solid var(--mint);
+  border-radius: var(--radius-sm);
+  margin: 18px 0;
+  padding: 14px 16px;
+}
+
+.prose .callout p {
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ---------- FAQ ---------- */
+
+.faq {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 8px 0 40px;
+}
+
+.faq details {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin: 10px 0;
+  padding: 14px 18px;
+}
+
+.faq summary {
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq details p {
+  color: var(--text-2);
+  margin-top: 8px;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--text-3);
+  font-size: 0.85rem;
+  padding: 28px 0 40px;
+  text-align: center;
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.site-footer a {
+  color: var(--text-2);
+}
+
+.site-footer .disclaimer {
+  margin-top: 10px;
+}
+
+/* ---------- Wider screens ---------- */
+
+@media (min-width: 720px) {
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero {
+    padding: 64px 0 72px;
+  }
+}

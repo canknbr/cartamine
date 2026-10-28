@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Cartamine — All the shopping. None of the spending.</title>
+  <!--
+    The short link the app shares (receipt, profile, product) and the store
+    badge use: canknbr.github.io/cartamine/get?ct=<source>. GitHub Pages serves this file
+    for /get. The two placeholders are filled by `npm run site:deploy` from the
+    App Store record; until it exists the link lands on the home page, and the
+    `ct` campaign token reaches Apple's campaign report the day it does.
+
+    A shared link is mostly SEEN before it is tapped, as the preview card a
+    message or a post unfurls into. Unfurlers read these tags and never run the
+    script below, so the card says what Cartamine is even though the page
+    itself is only a redirect.
+  -->
+  <meta name="description" content="A shopping simulator: browse, fill a cart, check out and follow the courier — nothing ships, nothing is charged, and the money stays yours.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cartamine">
+  <meta property="og:title" content="Cartamine — All the shopping. None of the spending.">
+  <meta property="og:description" content="A shopping simulator: browse, fill a cart, check out and follow the courier — nothing ships, nothing is charged, and the money stays yours.">
+  <meta property="og:url" content="https://canknbr.github.io/cartamine/get">
+  <meta property="og:image" content="https://canknbr.github.io/cartamine/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cartamine: All the shopping. None of the spending.">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>
+    (function () {
+      var appId = '';
+      var providerToken = '';
+      var params = new URLSearchParams(location.search);
+      var ct = params.get('ct') || 'site';
+      // A custom product page id (Apple Ads, campaign links) passes through,
+      // so the visitor lands on the page that matches the ad. Only Apple's own
+      // id shape is forwarded.
+      var ppid = params.get('ppid');
+      var page = ppid && /^[0-9a-f-]{36}$/i.test(ppid) ? '&ppid=' + ppid : '';
+      var target = appId
+        ? 'https://apps.apple.com/app/id' + appId + '?mt=8&ct=' + encodeURIComponent(ct) +
+          (providerToken ? '&pt=' + encodeURIComponent(providerToken) : '') + page
+        : 'index.html';
+      location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p><a href="index.html">Cartamine</a></p>
+</body>
+</html>

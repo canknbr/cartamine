@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Cartamine</title>
+  <!--
+    The web fallback for "rate Cartamine": the App Store's write-a-review sheet.
+    The app itself uses the itms-apps deep link; this page exists for links
+    shared outside it. Filled by `npm run site:deploy`; home page until then.
+  -->
+  <script>
+    (function () {
+      var appId = '';
+      location.replace(appId ? 'https://apps.apple.com/app/id' + appId + '?action=write-review' : 'index.html');
+    })();
+  </script>
+</head>
+<body>
+  <p><a href="index.html">Cartamine</a></p>
+</body>
+</html>
